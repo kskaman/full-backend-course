@@ -1,0 +1,34 @@
+### GET /
+GET http://localhost:3000
+
+
+### 
+POST http://localhost:3000/auth/register
+Content-Type: application/json
+
+{
+    "username": "testEmail@gmail.com",
+    "password": "testPassword123"
+}
+
+
+###
+## incorrect password
+POST http://localhost:3000/auth/login 
+Content-Type: application/json
+
+{
+    "username": "testEmail@gmail.com",
+    "password": "testPasswor123"
+}
+
+###
+POST http://localhost:3000/auth/login 
+Content-Type: application/json
+
+{
+    "username": "testEmail@gmail.com",
+    "password": "testPassword123"
+}
+
+###
